@@ -1,0 +1,10 @@
+<ng-content select="h1"></ng-content>
+<div class="d-flex align-items-center justify-content-center rounded my-2 ">
+
+  <div class="line-shape" [style.background-color]="titleLineColor"></div>
+  <i class="fa-solid fa-star mx-3"></i>
+  <div class="line-shape" [style.background-color]="titleLineColor"></div>
+</div>  
+<div class="row justify-content-center">
+  <ng-content select="p"></ng-content>
+</div>

@@ -1,0 +1,60 @@
+<div class="h-100 d-flex justify-content-center align-items-center flex-column p-5">
+  <app-title [titleLineColor]="'#212529'">
+    <h1 class="display-5 fw-bolder text-uppercase text-center">portfolio component</h1>
+  </app-title>
+  <div class="container my-5">
+    <div class="row gy-4">
+      <div class="col-md-4">
+        <div class="img-container">
+          <div class="layer rounded-2" (click)="onImageClick('poert1.png')">
+            <i class="fa-solid fa-plus"></i>
+          </div>
+          <img src="poert1.png" class="img-fluid rounded-2" alt="poert1">
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="img-container">
+          <div class="layer rounded-2" (click)="onImageClick('port2.png')">
+            <i class="fa-solid fa-plus"></i>
+          </div>
+          <img src="port2.png" class="img-fluid rounded-2" alt="poert2">
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="img-container">
+          <div class="layer rounded-2" (click)="onImageClick('port3.png')">
+            <i class="fa-solid fa-plus"></i>
+          </div>
+          <img src="port3.png" class="img-fluid rounded-2" alt="poert3">
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="img-container">
+          <div class="layer rounded-2" (click)="onImageClick('poert1.png')">
+            <i class="fa-solid fa-plus"></i>
+          </div>
+          <img src="poert1.png" class="img-fluid rounded-2" alt="poert1">
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="img-container">
+          <div class="layer rounded-2" (click)="onImageClick('port2.png')">
+            <i class="fa-solid fa-plus"></i>
+          </div>
+          <img src="port2.png" class="img-fluid rounded-2" alt="poert2">
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="img-container">
+          <div class="layer rounded-2" (click)="onImageClick('port3.png')">
+            <i class="fa-solid fa-plus"></i>
+          </div>
+          <img src="port3.png" class="img-fluid rounded-2" alt="poert3">
+        </div>
+      </div>
+    </div>
+    <div class="full-page" id="fullPage">
+      <img [src]="selectedImage" alt="etgv">
+    </div>
+  </div>
+</div>
