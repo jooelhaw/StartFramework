@@ -6,55 +6,56 @@
     <div class="row gy-4">
       <div class="col-md-4">
         <div class="img-container">
-          <div class="layer rounded-2" (click)="onImageClick('poert1.png')">
+          <div class="layer rounded-2" (click)="onClick('poert1.png')">
             <i class="fa-solid fa-plus"></i>
           </div>
-          <img src="poert1.png" class="img-fluid rounded-2" alt="poert1">
+          <img #img src="poert1.png" class="img-fluid rounded-2" alt="poert1">
         </div>
       </div>
       <div class="col-md-4">
         <div class="img-container">
-          <div class="layer rounded-2" (click)="onImageClick('port2.png')">
+          <div class="layer rounded-2" (click)="onClick('port2.png')">
             <i class="fa-solid fa-plus"></i>
           </div>
-          <img src="port2.png" class="img-fluid rounded-2" alt="poert2">
+          <img #img src="port2.png" class="img-fluid rounded-2" alt="poert2">
         </div>
       </div>
       <div class="col-md-4">
         <div class="img-container">
-          <div class="layer rounded-2" (click)="onImageClick('port3.png')">
+          <div class="layer rounded-2" (click)="onClick('port3.png')">
             <i class="fa-solid fa-plus"></i>
           </div>
-          <img src="port3.png" class="img-fluid rounded-2" alt="poert3">
+          <img #img src="port3.png" class="img-fluid rounded-2" alt="poert3">
         </div>
       </div>
       <div class="col-md-4">
         <div class="img-container">
-          <div class="layer rounded-2" (click)="onImageClick('poert1.png')">
+          <div class="layer rounded-2" (click)="onClick('poert1.png')">
             <i class="fa-solid fa-plus"></i>
           </div>
-          <img src="poert1.png" class="img-fluid rounded-2" alt="poert1">
+          <img #img src="poert1.png" class="img-fluid rounded-2" alt="poert1">
         </div>
       </div>
       <div class="col-md-4">
         <div class="img-container">
-          <div class="layer rounded-2" (click)="onImageClick('port2.png')">
+          <div class="layer rounded-2" (click)="onClick('port2.png')">
             <i class="fa-solid fa-plus"></i>
           </div>
-          <img src="port2.png" class="img-fluid rounded-2" alt="poert2">
+          <img #img src="port2.png" class="img-fluid rounded-2" alt="poert2">
         </div>
       </div>
       <div class="col-md-4">
         <div class="img-container">
-          <div class="layer rounded-2" (click)="onImageClick('port3.png')">
+          <div class="layer rounded-2" (click)="onClick('port3.png')">
             <i class="fa-solid fa-plus"></i>
           </div>
-          <img src="port3.png" class="img-fluid rounded-2" alt="poert3">
+          <img #img src="port3.png" class="img-fluid rounded-2" alt="poert3">
         </div>
       </div>
     </div>
-    <div class="full-page" id="fullPage">
-      <img [src]="selectedImage" alt="etgv">
+    <div #full class="full-page" id="fullPage" (click)="logDiv($event,full)">
+      <img [src]="" alt="any text" #selectedImg>
+      <!-- <img [src]="" alt="etgv"> -->
     </div>
   </div>
 </div>
