@@ -1,0 +1,12 @@
+.label-site {
+  top: 40px !important;
+}
+label {
+  transition: all ease-in-out 0.5s;
+  color: green;
+}
+
+input:focus {
+  outline: none !important;
+  box-shadow: none;
+}

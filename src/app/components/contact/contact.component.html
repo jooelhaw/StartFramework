@@ -1,1 +1,30 @@
-<p>contact works!</p>
+<div class="h-100 d-flex justify-content-center align-items-center flex-column p-5">
+  <app-title [titleLineColor]="'#212529'">
+    <h1 class="display-5 fw-bolder text-uppercase text-center">Contact Section</h1>
+  </app-title>
+  <div class="my-3 row">
+    <div class="mb-2">
+      <label #labelName class="ms-3 label-site top-0 position-relative" for="floatingInput">userName</label>
+      <input #inputName type="text" class="form-control p-3 position-relative border-0 border-bottom "
+        id="floatingInput" placeholder="userName" (input)="viewAge(labelName, inputName)">
+    </div>
+    <div class="mb-2">
+      <label #labelAge class="ms-3 label-site top-0 position-relative" for="floatingAge">userAge</label>
+      <input #inputAge type="text" class="form-control p-3 position-relative border-0 border-bottom " id="floatingAge"
+        placeholder="userAge" (input)="viewAge(labelAge, inputAge)">
+    </div>
+    <div class="mb-2">
+      <label #labelEmail for="floatingEmail" class="ms-3 label-site top-0 position-relative">userEmail</label>
+      <input #inputEmail type="email" class="form-control p-3 position-relative border-0 border-bottom"
+        id="floatingEmail" placeholder="name@example.com" (input)="viewAge(labelEmail, inputEmail)">
+    </div>
+    <div class="mb-2">
+      <label #labelPassword for="floatingPassword" class="ms-3 label-site top-0 position-relative">Password</label>
+      <input #inputPassword type="password" class="form-control p-3 position-relative border-0 border-bottom "
+        id="floatingPassword" placeholder="Password" (input)="viewAge(labelPassword, inputPassword)">
+    </div>
+    <div class="col-3">
+      <button type="submit" class="btn btn-success">Send Message</button>
+    </div>
+  </div>
+</div>
